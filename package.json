@@ -1,0 +1,38 @@
+{
+  "name": "moov-faststart",
+  "version": "1.0.0",
+  "description": "Re-orders moov atoms in mp4 containers to enable streaming",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "clean:test": "find ./test -name '*.js' -o -name '*.js.map' -exec rm {} \\;",
+    "clean:src": "find ./src -name '*.js' -o -name '*.js.map' -exec rm {} \\;",
+    "clean": "yarn run clean:src && yarn run clean:test",
+    "prebuild": "npm run clean",
+    "build": "tsc --declaration",
+    "pretest": "npm run build",
+    "test": "yarn mocha ./test --timeout=10000",
+    "prepack": "npm run build"
+  },
+  "author": "Kevin Tjiam <kevin@kevincharm.com>",
+  "repository": "github:kevincharm/moov-faststart",
+  "license": "Apache-2.0",
+  "keywords": [
+    "qt-faststart",
+    "faststart",
+    "quicktime",
+    "mp4",
+    "stream",
+    "moov"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.2",
+    "@types/tape": "^4.2.31",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "tape": "^4.9.0",
+    "typescript": "^2.9.2"
+  }
+}

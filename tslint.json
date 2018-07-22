@@ -1,0 +1,23 @@
+{
+    "defaultSeverity": "error",
+    "rules": {
+        "semicolon": false,
+        "linebreak-style": [true, "LF"],
+        "eofline": true,
+        "indent": [true, "spaces", 4],
+        "quotemark": [true, "single", "jsx-double"],
+        "no-floating-promises": true,
+        "await-promise": true,
+        "no-return-await": true,
+        "prefer-for-of": true,
+        "prefer-const": true,
+        "no-unused-expression": [true, "allow-fast-null-checks"],
+        "interface-name": false,
+        "ordered-imports": false,
+        "trailing-comma": false,
+        "member-ordering": false,
+        "arrow-parens": false,
+        "no-bitwise": false
+    },
+    "rulesDirectory": []
+}
