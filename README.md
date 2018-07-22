@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kevincharm/moov-faststart.svg?branch=master)](https://travis-ci.org/kevincharm/moov-faststart)
+
 # moov-faststart
 
 Re-orders moov atoms in mp4 containers to enable streaming. Based on [qt-faststart](https://github.com/FFmpeg/FFmpeg/blob/master/tools/qt-faststart.c), but works with a `Buffer` interface.
