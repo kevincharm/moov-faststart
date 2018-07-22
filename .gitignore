@@ -1,8 +1,11 @@
 .DS_Store
 node_modules/
 src/**/*.d.ts
+!src/types/**/*.d.ts
 src/**/*.js
 src/**/*.js.map
 test/**/*.d.ts
 test/**/*.js
 test/**/*.js.map
+
+yarn-error.log
