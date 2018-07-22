@@ -1,6 +1,6 @@
 {
   "name": "moov-faststart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Re-orders moov atoms in mp4 containers to enable streaming",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
