@@ -42,7 +42,7 @@ export function parseAtoms(infile: Buffer, depth = 0): QtAtom[] {
         let fwd: BigInt // forward-seek counter
         let atomSize = BigInt(readU32(cur, infile))
         const atomType = readU32(cur, infile)
-        if (atomSize === 1) {
+        if (atomSize === 1n) {
             // 64-bit atom size
             atomSize = readU64(cur, infile)
             if (atomSize > BigInt(Number.MAX_SAFE_INTEGER)) {
